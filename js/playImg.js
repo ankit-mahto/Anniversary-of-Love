@@ -16,6 +16,8 @@ function showImage(){
 
 function play(){
 	let x = document.getElementById("myaudio"); 
+	if(!x.paused) x.pause();
+	else
 	x.play();
 	if(t == 0){
 		myImage.setAttribute("src", "");
